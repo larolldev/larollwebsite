@@ -1,0 +1,201 @@
+@import "../styles/theme-dark.scss";
+
+.foods {
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+  background-color: $intro-color-bg;
+  // @include bg-svg($foods-right-bottom-svgcode);
+  background-image: url("../img/" + $foods-right-bottom-img);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 80% auto;
+  background-attachment: scroll;
+}
+
+.foods-topright-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  height: auto;
+}
+
+// foods-msg fadein
+.foods-msg {
+  font-family: $fontimpact;
+  font-size: 2rem;
+  font-weight: bold;
+  color: $foods-msg-color;
+  position: absolute;
+  top: $top-left-align;
+  left: $top-left-align;
+}
+
+.foods-bottom-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.foods-middle-cards {
+  position: absolute;
+  top: 30vh;
+  left: 5vw;
+}
+
+.foods-more {
+  display: inline-block;
+  position: absolute;
+  left: $top-left-align;
+  bottom: 6rem;
+  z-index: 200;
+  width: 60%;
+  padding: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: $foods-more-color;
+}
+
+.card {
+  width: 40vw;
+  position: relative;
+}
+
+.card-image {
+  width: 100%;
+}
+
+@media (min-width: $iphoneP375) {
+  .foods {
+    background-size: 80% auto;
+  }
+  .foods-msg {
+    font-size: 3rem;
+  }
+  .foods-topright-img {
+    width: 60vw;
+  }
+  .foods-middle-cards {
+    top: 40vh;
+    left: 10vw;
+  }
+  .foods-more {
+    bottom: 12rem;
+  }
+}
+
+@media (min-width: $iphoneL667) {
+  .foods {
+    background-size: 60% auto;
+  }
+  .foods-msg {
+    font-size: 2rem;
+  }
+  .foods-topright-img {
+    width: 50vw;
+  }
+  .foods-middle-cards {
+    top: 36vh;
+    left: 10vw;
+  }
+  .card-image {
+    width: 78%;
+  }
+  .foods-more {
+    bottom: 4rem;
+  }
+}
+@media (min-width: $iphonePlusL736) {
+  .foods {
+    background-size: 50% auto;
+  }
+  .foods-msg {
+    font-size: 5rem;
+  }
+  .foods-topright-img {
+    width: 40vw;
+  }
+  .foods-middle-cards {
+    top: 60vh;
+    left: 10vw;
+  }
+  .card-image {
+    width: 60%;
+  }
+  .foods-more {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: $ipadP768) {
+  // 767px
+  .foods-msg {
+    font-size: 5rem;
+  }
+  .foods-middle-cards {
+    top: 40vh;
+  }
+  .foods-more {
+    bottom: 10rem;
+    font-size: 2rem;
+  }
+  .card-image {
+    width: 100%;
+  }
+}
+
+@media (min-width: $ipadProP834) {
+  .foods-middle-cards {
+    top: 40vh;
+  }
+  .foods-more {
+    bottom: 10rem;
+    font-size: 2.5rem;
+  }
+  .card-image {
+    width: 80%;
+  }
+}
+
+@media (min-width: $ipadL1024) {
+  .foods-msg {
+    font-size: 5rem;
+  }
+  .foods-more {
+    bottom: 8rem;
+  }
+  .card-image {
+    width: 80%;
+  }
+}
+
+@media (min-width: $ipadProL1112) {
+  .foods-msg {
+    font-size: 5rem;
+  }
+  .foods-middle-cards {
+    top: 50vh;
+  }
+  .foods-more {
+    bottom: 9rem;
+  }
+  .card-image {
+    width: 80%;
+  }
+}
+
+@media (min-width: $desktopL1680) {
+  // 1919px
+  .foods-msg {
+    font-size: 6rem;
+  }
+  .foods-middle-cards {
+    top: 50vh;
+  }
+  .foods-more {
+    font-size: 3rem;
+  }
+}

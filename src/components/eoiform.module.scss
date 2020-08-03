@@ -1,0 +1,85 @@
+@import "../styles/theme-dark.scss";
+
+.formgrid {
+  width: 80vw;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0.2rem;
+  grid-auto-flow: dense;
+  align-items: center;
+
+  label,
+  input,
+  textarea {
+    align-self: start;
+  }
+
+  label {
+    font-size: 1.2rem;
+    user-select: none;
+    cursor: pointer;
+    color: $eiform-label-color;
+  }
+
+  input,
+  textarea {
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+
+    font-family: $fontgillsans;
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: $eiform-input-text;
+
+    width: auto;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+  }
+
+  input[type="submit"] {
+    background-color: $eiform-send-button-bg;
+    border: none;
+    color: $eiform-button-color;
+    padding: 0.6rem 2rem;
+    margin: 0.5rem 0.2rem;
+    cursor: pointer;
+  }
+
+  input[type="reset"] {
+    background-color: $eiform-clear-button-bg;
+    border: none;
+    color: $eiform-button-color;
+    padding: 0.6rem 2rem;
+    margin: 0.5rem 0.2rem;
+    cursor: pointer;
+  }
+}
+
+legend {
+  color: $eiform-legend;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+@media (min-width: $iphoneP375) {
+  .formgrid {
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 0.4rem;
+    grid-auto-flow: dense;
+  }
+
+  input,
+  textarea {
+    grid-column: 2 / 3;
+  }
+}
+
+@media (min-width: $ipadProL1112) {
+  .formgrid {
+    width: 60vw;
+  }  
+}
+

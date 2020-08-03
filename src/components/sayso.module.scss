@@ -1,0 +1,166 @@
+@import "../styles/theme-dark.scss";
+
+.sayso {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $sayso-color-bg;
+  padding-bottom: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: $sayso-color-title;
+  padding-top: 3rem;
+}
+
+.social {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  a {
+    text-align: center;
+    img {
+      width: 3rem;
+      height: 3rem;
+      margin: 0.5rem;
+    }
+  }
+}
+
+.quotes {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  .quote {
+    padding: 1.5rem;
+  }
+}
+
+.say {
+  font-size: 1rem;
+  text-align: center;
+  color: $sayso-color-fg;
+}
+
+.who {
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: center;
+  color: $sayso-color-who;
+  padding-top: 0.8rem;
+}
+
+// @media
+@media (min-width: $iphoneP375) {
+  // 376px
+  .title {
+    font-size: 2.5rem;
+  }
+  .quotes {
+    width: 70%;
+  }
+  .say {
+    font-size: 1.4rem;
+  }
+  .who {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: $iphonePlusP414) {
+  // 376px
+  .title {
+    font-size: 2rem;
+  }
+  .quotes {
+    width: 80%;
+  }
+  .say {
+    font-size: 1.4rem;
+  }
+  .who {
+    font-size: 1.2rem;
+    margin-top: 0.6rem;
+  }
+}
+
+@media (min-width: $iphonePlusL736) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .quotes {
+    width: 70%;
+  }
+  .say {
+    font-size: 1.2rem;
+  }
+  .who {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: $ipadP768) {
+  // 767px
+  .title {
+    font-size: 3rem;
+  }
+  .quotes {
+    width: 70%;
+  }
+  .say {
+    font-size: 1.6rem;
+  }
+  .who {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: $ipadProP834) {
+  .title {
+    font-size: 3rem;
+  }
+  .quotes {
+    width: 70%;
+  }
+  .say {
+    font-size: 1.6rem;
+  }
+  .who {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: $ipadProL1366) {
+  .title {
+    font-size: 4rem;
+  }
+  .quotes {
+    width: 50%;
+  }
+  .say {
+    font-size: 1.8rem;
+  }
+  .who {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: $desktopL1680) {
+  // 1919px
+  .title {
+    font-size: 4rem;
+  }
+  .quotes {
+    width: 50%;
+  }
+  .say {
+    font-size: 2rem;
+  }
+  .who {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,36 @@
+- photo:
+  gal_title: Image 2
+  gal_order: 1
+  gal_image: ./image2.jpg
+- photo:
+  gal_title: Customer 6
+  gal_order: 2
+  gal_image: ./customer6.jpg  
+- photo:
+  gal_title: Image 3
+  gal_order: 3
+  gal_image: ./image3.jpg
+- photo:
+  gal_title: Image 4
+  gal_order: 4
+  gal_image: ./image4.jpg
+- photo:
+  gal_title: Customer 1
+  gal_order: 9
+  gal_image: ./customer1.png
+- photo:
+  gal_title: Customer 2
+  gal_order: 6
+  gal_image: ./customer2.png
+- photo:
+  gal_title: Customer 3
+  gal_order: 7
+  gal_image: ./customer3.jpg
+- photo:
+  gal_title: Customer 4
+  gal_order: 8
+  gal_image: ./customer4.jpg
+- photo:
+  gal_title: Customer 5
+  gal_order: 5
+  gal_image: ./customer5.jpg                

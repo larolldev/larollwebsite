@@ -1,0 +1,10 @@
+@import "../styles/theme-dark.scss";
+
+.about {
+  padding: 1.2rem;
+  background-color: $locations-color-bg;
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+}

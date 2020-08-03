@@ -1,0 +1,28 @@
+@import "../styles/theme-dark.scss";
+
+.locations {
+  overflow: hidden;
+  position: relative;
+  background-color: $locations-color-bg;
+  padding: 1rem;
+
+  .map {
+    width: 100%;
+    height: auto;
+    padding-top: 0.5rem;
+  }
+}
+
+.location {
+  padding-top: 2rem;
+  font-size: 0.9rem;
+  img {
+    width: 100%;
+    height: auto;
+    padding-top: 0.5rem;
+  }
+  .phone {
+    color: $color-accent-light;
+    font-weight: 400;
+  }
+}

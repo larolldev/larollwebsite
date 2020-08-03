@@ -1,0 +1,130 @@
+@import "../styles/theme-dark.scss";
+
+.intro {
+  margin-top: 0;
+  overflow: hidden;
+  width: 100%;
+  height: calc(100vh - 3rem);
+  position: relative;
+  background-color: $intro-color-bg;
+}
+
+.intro-circle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: auto;
+  width: 85%;
+}
+
+.intro-msg {
+  font-family: $fontimpact;
+  font-size: 3rem;
+  font-weight: bold;
+  color: $intro-msg-color;
+  position: absolute;
+  top: $top-intro-align;
+  left: $left-intro-align;
+  z-index: 10;
+}
+
+.intro-words {
+  width: 70%;
+  height: auto;
+  position: absolute;
+  bottom: 47vh;
+  left: 15%;
+}
+
+@media (min-width: $iphoneP375) {
+  .intro-circle {
+    width: 90%;
+    height: auto;
+  }
+  .intro-msg {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: $iphoneL667) {
+  .intro-circle {
+    height: 80vh;
+    width: auto;
+  }
+  .intro-msg {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: $iphonePlusL736) {
+  .intro-circle {
+    height: 90vh;
+    width: auto;
+  }
+
+  .intro-msg {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: $ipadP768) {
+  .intro-circle {
+    height: auto;
+    width: 90%;
+  }
+
+  .intro-msg {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: $ipadProP834) {
+  .intro-circle {
+    width: 65vh;
+    height: auto;
+  }
+  .intro-msg {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: $ipadL1024) {
+  .intro-circle {
+    width: 70vh;
+    height: auto;
+  }
+  .intro-msg {
+    font-size: 6rem;
+  }
+}
+
+@media (min-width: $ipadProL1112) {
+  .intro-circle {
+    width: 70vh;
+    margin-bottom: 0;
+  }
+  .intro-msg {
+    font-size: 7rem;
+  }
+}
+
+@media (min-width: $ipadProL1366) {
+  .intro-circle {
+    width: 80vh;
+    margin-bottom: 0;
+  }
+  .intro-msg {
+    font-size: 8rem;
+  }
+}
+
+@media (min-width: $desktopL1680) {
+  .intro-circle {
+    height: 85%;
+    width: auto;
+    margin-bottom: -1rem;
+  }
+  .intro-msg {
+    font-size: 9rem;
+  }
+}

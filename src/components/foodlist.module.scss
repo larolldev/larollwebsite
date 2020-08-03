@@ -1,0 +1,355 @@
+@import "../styles/theme-dark.scss";
+
+// top section
+.special {
+  margin-bottom: 0;
+}
+
+h1 {
+  padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+  color: $color-fg;
+  background-color: $color-primary-dark;
+}
+
+// food
+$lineheight: 4rem;
+$calib: 1rem;
+.food {
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: $food-color-bg;
+
+  // defaul: right arrangement
+  .group {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 3rem;
+    line-height: $lineheight;
+
+    color: $food-cat-color;
+    transform-origin: 0 0;
+    transform: translateX($lineheight - $calib) rotate(90deg);
+  }
+
+  .image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: auto;
+  }
+
+  .desc {
+    z-index: 1;
+    font-size: 1.2rem;
+    color: $food-desc-color;
+    width: 60%;
+    padding: $top-left-align 1% 1% $top-left-align;
+    text-align: left;
+  }
+
+  .flavours {
+    z-index: 10;
+    position: absolute;
+    bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    padding-left: $top-left-align;
+    transition: $transitionfadein;
+    font-size: 1rem;
+    color: $food-flavours-color;
+    &:before {
+      content: "f l a v o u r s";
+      font-weight: bold;
+      text-decoration-line: underline;
+      text-underline-position: under;
+      text-decoration-style: wavy;
+      // letter-spacing: 7px;
+    }
+  }
+
+  .contents {
+    background-color: $food-flavours-contents-bg;
+    margin-left: -1rem;
+    padding-left: 1rem;
+    padding-top: 0.3rem;
+    text-align: left;
+  }
+
+  .bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+  }
+}
+// left arrangement
+.foodleft {
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: $food-color-bg;
+
+  // defaul: right arrangement
+  .group {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 3rem;
+    line-height: $lineheight;
+    color: $food-cat-color;
+    transform-origin: 0 0;
+    transform: translateX($lineheight) rotate(90deg);
+  }
+
+  .image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: auto;
+  }
+
+  .desc {
+    z-index: 1;
+    font-size: 1.2rem;
+    color: $food-desc-color;
+    width: 60%;
+    padding: $top-left-align 1% 1% $top-left-align;
+    text-align: left;
+  }
+
+  .flavours {
+    z-index: 10;
+    position: absolute;
+    bottom: 5rem;
+    right: $top-left-align;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    padding-left: $top-left-align;
+    transition: $transitionfadein;
+    font-size: 1rem;
+    color: $food-flavours-color;
+    &:before {
+      content: "f l a v o u r s";
+      font-weight: bold;
+      text-decoration-line: underline;
+      text-underline-position: under;
+      text-decoration-style: wavy;
+      // letter-spacing: 7px;
+    }
+  }
+
+  .contents {
+    background-color: $food-flavours-contents-bg;
+    margin-left: -1rem;
+    padding-left: 1rem;
+    padding-top: 0.3rem;
+    text-align: left;
+  }
+
+  .bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.foodleft {
+  .group {
+    // transform: rotate(90deg) translateX($lineheight) translateY(-100vw) translateY($lineheight);
+    transform-origin: 100vw 0;
+    transform: translateX($calib) rotate(90deg) translateX(100vw);
+  }
+  .image {
+    left: 0;
+    transform: scaleX(-1); // temp
+  }
+  .desc {
+    // transform: translateX(61%);
+    padding: $top-left-align $top-left-align 1% 1%;
+    text-align: right;
+  }
+  .flavours {
+    align-items: flex-end;
+    // transform: translateX(80%);
+  }
+  .contents {
+    text-align: right;
+    margin-right: -1rem;
+    padding-right: 1rem;
+  }
+}
+
+.food,
+.foodleft {
+  // @media
+  @media (min-width: $iphoneP375) {
+    .group {
+      font-size: 4rem;
+    }
+    .desc {
+      font-size: 1.3rem;
+    }
+    .flavours {
+      font-size: 1.3rem;
+      bottom: 10rem;
+    }
+    .contents {
+      font-size: 1.3rem;
+    }
+    .image {
+      width: 70%;
+    }
+  }
+
+  @media (min-width: $iphoneL667) {
+    .group {
+      font-size: 3rem;
+    }
+    .desc {
+      font-size: 1.3rem;
+    }
+    .flavours {
+      font-size: 1.3rem;
+      bottom: 5rem;
+    }
+    .contents {
+      font-size: 1.3rem;
+    }
+    .image {
+      width: 30%;
+    }
+  }
+
+  @media (min-width: $iphonePlusL736) {
+    .group {
+      font-size: 4rem;
+      transform: translateX($lineheight) rotate(90deg);
+    }
+    .desc {
+      font-size: 1.5rem;
+    }
+    .flavours {
+      font-size: 1.5rem;
+      bottom: 7rem;
+    }
+    .contents {
+      font-size: 1.5rem;
+    }
+    .image {
+      width: 40%;
+    }
+  }
+
+  @media (min-width: $ipadP768) {
+    .group {
+      font-size: 5rem;
+    }
+    .desc {
+      font-size: 2rem;
+    }
+    .flavours {
+      font-size: 1.6rem;
+      bottom: 7rem;
+    }
+    .contents {
+      font-size: 1.6rem;
+    }
+    .image {
+      width: 65%;
+    }
+  }
+
+  @media (min-width: $ipadProP834) {
+    .group {
+      font-size: 5rem;
+    }
+    .flavours {
+      bottom: 14rem;
+    }
+  }
+
+  @media (min-width: $ipadProL1112) {
+    .group {
+      font-size: 5rem;
+    }
+    .flavours {
+      bottom: 8rem;
+    }
+    .image {
+      width: 35%;
+    }
+  }
+
+  @media (min-width: $ipadProL1366) {
+    .group {
+      font-size: 5rem;
+    }
+    .desc {
+      font-size: 2.5rem;
+    }
+    .flavours {
+      font-size: 2.4rem;
+      bottom: 17rem;
+    }
+    .contents {
+      font-size: 2.4rem;
+    }
+    .image {
+      width: 40%;
+    }
+  }
+
+  @media (min-width: $desktopL1680) {
+    // 1919px
+    .group {
+      font-size: 5rem;
+    }
+    .desc {
+      font-size: 3rem;
+    }
+    .flavours {
+      font-size: 3rem;
+      bottom: 22rem;
+    }
+    .contents {
+      font-size: 3rem;
+    }
+    .image {
+      width: 30%;
+    }
+  }
+}
+
+@media (min-width: $ipadL1024) {
+  .foodleft {
+    .group {
+      transform-origin: $bodyinside 0;
+      transform: rotate(90deg) translateX($bodyinside);
+    }
+  }
+}
