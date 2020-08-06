@@ -31,6 +31,15 @@ const Header = () => {
         </div>
       </div>
       <div className={styles.navList}>
+        <Link
+          to='/updates-per-coronavirus'
+          style={{
+            backgroundColor: '#700000',
+            paddingTop: '0.1rem'
+          }}
+        >
+          Updates per coronavirus restrictions
+        </Link>
         <Link to='/'>Home</Link>
         <Link to='/foods'>Foods</Link>
         <Link to='/#sayso'>What people say</Link>

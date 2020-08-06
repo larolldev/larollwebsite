@@ -15,6 +15,9 @@ const Footer = () => {
       </div>
       <div className={styles.menu}>
         <p>SITEMAP</p>
+        <Link to='/updates-per-coronavirus'>
+          Updates per coronavirus restrictions
+        </Link>
         <Link to='/'>Home</Link>
         <Link to='/foods'>Foods</Link>
         <Link to='/#sayso'>What people say</Link>
