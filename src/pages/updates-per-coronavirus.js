@@ -14,18 +14,11 @@ const UpdatesPerCoronavirus = () => {
       />
       <section className={styles.covid}>
         <h3>
-          TEMPORARY CHANGE
-          <br />
-          TO OPENING HOURS
-          <br />
-          DUE TO COVID RESTRICTONS
+          WE'RE BACK TO NORMAL OPENING HOURS
         </h3>
-        <h3>9AM - 2PM</h3>
+        <h3>6:00AM - 2:30PM</h3>
         <h3>MONDAY - FRIDAY</h3>
-        <p>Effective from Monday 10 August 2020.</p>
-        <p>
-          We will be back to normal hours as soon as the restrictions are easier
-        </p>
+        <p>Effective from Monday 21 September 2020.</p>
       </section>
       <Locations />
       <Gallery />
