@@ -27,6 +27,13 @@ const Header = () => {
           <Link to='/' />
         </div>
         <div className={styles.navRight}>
+          <a
+            href='https://lrcnc.netlify.app'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            Order
+          </a>
           <a href={downloadPdf.pdf.publicURL} download />
         </div>
       </div>

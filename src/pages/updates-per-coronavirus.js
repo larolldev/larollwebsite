@@ -13,12 +13,10 @@ const UpdatesPerCoronavirus = () => {
         description='This is my updates per covid page'
       />
       <section className={styles.covid}>
-        <h3>
-          WE'RE BACK TO NORMAL OPENING HOURS
-        </h3>
-        <h3>6:00AM - 2:30PM</h3>
-        <h3>MONDAY - FRIDAY</h3>
-        <p>Effective from Monday 21 September 2020.</p>
+        <h3> We're applying</h3>
+        <h3>WEARING MASKS - DISTANCING - HYGIENE PROCEDURES</h3>
+        <h3>Opening: 6:00AM - 2:30PM MONDAY - FRIDAY</h3>
+        <h3>Close: Weekends and public holidays</h3>
       </section>
       <Locations />
       <Gallery />

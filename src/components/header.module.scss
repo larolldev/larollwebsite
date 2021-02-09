@@ -61,6 +61,7 @@ $toggle_height: 100vh;
         padding-left: 1rem;
         padding-bottom: 0.2rem;
       }
+      cursor: pointer;
     }
     a {
       background-position: center center;
@@ -79,7 +80,14 @@ $toggle_height: 100vh;
     justify-content: flex-end;
     align-items: center;
     height: 100%;
-    a {
+    > :nth-child(1) {
+      margin-right: 2rem;
+      font-size: 1rem;;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: yellow;
+    }
+    > :nth-child(2) {
       background-position: center center;
       background-repeat: no-repeat;
       background-size: contain;
