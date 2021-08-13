@@ -8,7 +8,7 @@ const Header = () => {
 
   const downloadPdf = useStaticQuery(graphql`
     {
-      pdf: file(name: { eq: "menu-may2020" }) {
+      pdf: file(name: { eq: "menu-aug2021" }) {
         name
         extension
         publicURL
